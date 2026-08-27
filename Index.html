@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Álvaro Elí Sánchez Larrazabal - CV</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f2f2;
+            color: #222;
+        }
+
+        .cv {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            background: white;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 1fr 150px 1fr;
+            align-items: center;
+            padding: 30px 40px;
+            border-bottom: 2px solid #d99b94;
+        }
+
+        .nombre {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .cuadro {
+            width: 28px;
+            height: 28px;
+            background: #394b5f;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .descripcion {
+            font-size: 13px;
+            line-height: 1.5;
+            margin-top: 18px;
+            max-width: 400px;
+        }
+
+        /* FOTO */
+
+        .foto {
+            width: 125px;
+            height: 125px;
+            border-radius: 50%;
+            margin: auto;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid #eee;
+            overflow: hidden;
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* CONTACTO */
+
+        .contacto {
+            text-align: right;
+            font-size: 12px;
+            line-height: 2;
+        }
+
+        /* CONTENIDO */
+
+        main {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+        }
+
+        section {
+            padding: 30px 40px;
+        }
+
+        .izquierda {
+            border-right: 1px solid #ddd;
+        }
+
+        h2 {
+            font-size: 21px;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        /* ELEMENTOS */
+
+        .elemento {
+            border-left: 3px solid #ef5148;
+            padding-left: 22px;
+            margin-bottom: 30px;
+        }
+
+        .fecha {
+            color: #d9544d;
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .elemento h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .lugar {
+            color: #888;
+            font-size: 11px;
+            margin-top: 4px;
+            margin-bottom: 8px;
+        }
+
+        .elemento p {
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* HABILIDADES */
+
+        .habilidad {
+            display: grid;
+            grid-template-columns: 145px 1fr;
+            align-items: center;
+            gap: 15px;
+            margin: 15px 0;
+            font-size: 12px;
+        }
+
+        .barra {
+            height: 10px;
+            background: #eee;
+            border: 1px solid #ddd;
+        }
+
+        .barra span {
+            display: block;
+            height: 100%;
+            background: #e94f49;
+        }
+
+        /* LISTAS */
+
+        ul {
+            padding-left: 18px;
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        /* INTERESES */
+
+        .intereses {
+            margin-top: 30px;
+        }
+
+        .etiqueta {
+            display: inline-block;
+            padding: 6px 10px;
+            margin: 4px;
+            background: #f0f0f0;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            border-top: 1px solid #ddd;
+            padding: 15px 40px;
+            text-align: right;
+            font-size: 10px;
+            color: #999;
+        }
+
+        /* CELULAR */
+
+        @media (max-width: 800px) {
+
+            header {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .nombre {
+                justify-content: center;
+            }
+
+            .descripcion {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .foto {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .contacto {
+                text-align: center;
+                margin-top: 15px;
+            }
+
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            .izquierda {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="cv">
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <div>
+
+            <div class="nombre">
+
+                <div class="cuadro"></div>
+
+                <h1>
+                    Álvaro Elí Sánchez Larrazabal
+                </h1>
+
+            </div>
+
+            <p class="descripcion">
+
+                Estudiante con interés en seguir aprendiendo,
+                desarrollar nuevas habilidades y continuar con
+                su preparación académica.
+
+            </p>
+
+        </div>
+
+
+        <!-- FOTO -->
+
+        <div class="foto">
+
+            <img 
+                src="https://i.ibb.co/8g8N15Dd/IMG-8815.jpg" 
+                alt="Álvaro Elí Sánchez Larrazabal"
+            >
+
+        </div>
+
+
+        <!-- DATOS -->
+
+        <div class="contacto">
+
+            <div>📍 Yanga, Veracruz</div>
+
+            <div>🎓 Bachillerato terminado</div>
+
+            <div>👤 Álvaro Elí Sánchez Larrazabal</div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+
+    <main>
+
+        <!-- COLUMNA IZQUIERDA -->
+
+        <section class="izquierda">
+
+            <h2>
+                Perfil
+            </h2>
+
+            <div class="elemento">
+
+                <div class="fecha">
+                    INFORMACIÓN PERSONAL
+                </div>
+
+                <h3>
+                    Álvaro Elí Sánchez Larrazabal
+                </h3>
+
+                <div class="lugar">
+                    Yanga, Veracruz, México
+                </div>
+
+                <p>
+                    Persona interesada en continuar su formación
+                    académica, aprender nuevas habilidades y
+                    adquirir experiencia en diferentes áreas.
+                </p>
+
+            </div>
+
+
+            <h2>
+                Educación
+            </h2>
+
+            <div class="elemento">
+
+                <div class="fecha">
+                    BACHILLERATO
+                </div>
+
+                <h3>
+                    Bachillerato terminado
+                </h3>
+
+                <div class="lugar">
+                    Veracruz, México
+                </div>
+
+                <p>
+                    Estudios de nivel medio superior concluidos.
+                </p>
+
+            </div>
+
+
+            <h2>
+                Objetivo
+            </h2>
+
+            <div class="elemento">
+
+                <div class="fecha">
+                    META PERSONAL
+                </div>
+
+                <h3>
+                    Seguir preparándome
+                </h3>
+
+                <p>
+                    Continuar estudiando y desarrollar conocimientos
+                    y habilidades que me permitan crecer tanto
+                    académicamente como profesionalmente.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- COLUMNA DERECHA -->
+
+        <section>
+
+            <h2>
+                Habilidades
+            </h2>
+
+            <div class="habilidad">
+
+                <span>
+                    Trabajo en equipo
+                </span>
+
+                <div class="barra">
+                    <span style="width: 85%;"></span>
+                </div>
+
+            </div>
+
+
+            <div class="habilidad">
+
+                <span>
+                    Comunicación
+                </span>
+
+                <div class="barra">
+                    <span style="width: 80%;"></span>
+                </div>
+
+            </div>
+
+
+            <div class="habilidad">
+
+                <span>
+                    Creatividad
+                </span>
+
+                <div class="barra">
+                    <span style="width: 85%;"></span>
+                </div>
+
+            </div>
+
+
+            <div class="habilidad">
+
+                <span>
+                    Responsabilidad
+                </span>
+
+                <div class="barra">
+                    <span style="width: 90%;"></span>
+                </div>
+
+            </div>
+
+
+            <div class="habilidad">
+
+                <span>
+                    Pensamiento crítico
+                </span>
+
+                <div class="barra">
+                    <span style="width: 80%;"></span>
+                </div>
+
+            </div>
+
+
+            <div class="intereses">
+
+                <h2>
+                    Información
+                </h2>
+
+                <ul>
+
+                    <li>
+                        Lugar de origen: Yanga, Veracruz
+                    </li>
+
+                    <li>
+                        País: México
+                    </li>
+
+                    <li>
+                        Escolaridad: Bachillerato terminado
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="intereses">
+
+                <h2>
+                    Intereses
+                </h2>
+
+                <span class="etiqueta">
+                    Tecnología
+                </span>
+
+                <span class="etiqueta">
+                    Programación
+                </span>
+
+                <span class="etiqueta">
+                    Videojuegos
+                </span>
+
+                <span class="etiqueta">
+                    Aprender
+                </span>
+
+                <span class="etiqueta">
+                    Computación
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE -->
+
+    <footer>
+
+        Álvaro Elí Sánchez Larrazabal · Yanga, Veracruz
+
+    </footer>
+
+</div>
+
+</body>
+</html>
